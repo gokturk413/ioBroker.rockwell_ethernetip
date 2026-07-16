@@ -168,6 +168,12 @@ automatically on install — nothing to build for adapter users or contributors.
 	### **WORK IN PROGRESS**
 -->
 
+### 0.0.12 (2026-07-16)
+
+- (gokturk413) Push auto-recovery after controller outages and Studio downloads
+- (gokturk413) Instructions tab fixes (own scrollbar, dark-theme chips), original adapter logo
+- (gokturk413) Admin translations for 10 languages; license changed to CC BY-NC 4.0
+
 ### 0.0.11 (2026-07-16)
 
 - (gokturk413) License editions with a keyless free tier: Free = all features, up to 1000 tags, instance 0 only; Standard = instances 0..1 with 3000 tags each; Professional = instances 0..2 with 10000 tags each; Unlimited

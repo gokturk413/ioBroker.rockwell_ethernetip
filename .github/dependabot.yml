@@ -17,6 +17,18 @@ updates:
           # major @types/node bumps track Node majors — handled manually with CI
           - dependency-name: '@types/node'
             update-types: ['version-update:semver-major']
+          # @iobroker/adapter-react-v5 pins react 18 (peer) — react 19 cannot land
+          - dependency-name: 'react'
+            update-types: ['version-update:semver-major']
+          - dependency-name: 'react-dom'
+            update-types: ['version-update:semver-major']
+          - dependency-name: '@types/react'
+            update-types: ['version-update:semver-major']
+          - dependency-name: '@types/react-dom'
+            update-types: ['version-update:semver-major']
+          # TypeScript 7 is the native-port preview — adopt deliberately, not via bot
+          - dependency-name: 'typescript'
+            update-types: ['version-update:semver-major']
 
     - package-ecosystem: github-actions
       directory: '/'

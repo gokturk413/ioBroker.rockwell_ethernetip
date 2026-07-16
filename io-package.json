@@ -1,8 +1,21 @@
 {
 	"common": {
 		"name": "rockwell_ethernetip",
-		"version": "0.0.11",
+		"version": "0.0.12",
 		"news": {
+			"0.0.12": {
+				"en": "Push auto-recovery after controller outages and Studio downloads; Instructions tab fixes (own scrollbar, dark-theme chips); original adapter logo; admin translations for 10 languages; license changed to CC BY-NC 4.0 with third-party notices in the platform packages.",
+				"de": "Automatische Push-Wiederherstellung nach Controller-Ausfällen und Studio-Downloads; Anleitungs-Tab-Korrekturen (eigene Bildlaufleiste, Dark-Theme-Chips); eigenes Adapter-Logo; Admin-Übersetzungen für 10 Sprachen; Lizenz auf CC BY-NC 4.0 umgestellt, Drittanbieterhinweise in den Plattformpaketen.",
+				"ru": "Автовосстановление push после недоступности контроллера и загрузок из Studio; исправления вкладки «Инструкция» (собственная прокрутка, тёмная тема); собственный логотип; переводы админки на 10 языков; лицензия CC BY-NC 4.0 и уведомления о сторонних компонентах.",
+				"pt": "Recuperação automática do push após indisponibilidade do controlador e downloads do Studio; correções da aba de instruções (barra de rolagem própria, tema escuro); logótipo próprio; traduções do admin para 10 idiomas; licença CC BY-NC 4.0 com avisos de terceiros.",
+				"nl": "Automatisch pushherstel na controller-uitval en Studio-downloads; instructietab-fixes (eigen scrollbalk, donker thema); eigen logo; admin-vertalingen voor 10 talen; licentie CC BY-NC 4.0 met third-party notices.",
+				"fr": "Rétablissement automatique du push après indisponibilité du contrôleur et téléchargements Studio ; corrections de l’onglet Instructions (barre de défilement propre, thème sombre) ; logo original ; traductions de l’admin en 10 langues ; licence CC BY-NC 4.0 avec mentions tierces.",
+				"it": "Ripristino automatico del push dopo indisponibilità del controller e download da Studio; correzioni della scheda Istruzioni (barra di scorrimento propria, tema scuro); logo originale; traduzioni dell’admin in 10 lingue; licenza CC BY-NC 4.0 con avvisi di terze parti.",
+				"es": "Recuperación automática del push tras caídas del controlador y descargas de Studio; correcciones de la pestaña de instrucciones (barra de desplazamiento propia, tema oscuro); logotipo original; traducciones del admin a 10 idiomas; licencia CC BY-NC 4.0 con avisos de terceros.",
+				"pl": "Automatyczne przywracanie push po niedostępności kontrolera i pobraniach ze Studio; poprawki karty instrukcji (własny pasek przewijania, ciemny motyw); własne logo; tłumaczenia admina na 10 języków; licencja CC BY-NC 4.0 z informacjami o komponentach zewnętrznych.",
+				"uk": "Автовідновлення push після недоступності контролера та завантажень зі Studio; виправлення вкладки «Інструкція» (власна прокрутка, темна тема); власний логотип; переклади адмінки 10 мовами; ліцензія CC BY-NC 4.0 із повідомленнями про сторонні компоненти.",
+				"zh-cn": "控制器离线和 Studio 下载后推送自动恢复；使用说明选项卡修复（独立滚动条、深色主题）；原创徽标；管理界面 10 种语言翻译；许可证改为 CC BY-NC 4.0，平台包内含第三方声明。"
+			},
 			"0.0.11": {
 				"en": "License editions with a keyless free tier: Free = all features, up to 1000 tags, instance 0 only; Standard = instances 0..1, 3000 tags each; Professional = instances 0..2, 10000 tags each; Unlimited. New Instructions tab with step-by-step setup and downloadable source-protected Add-On Instructions.",
 				"de": "Lizenz-Editionen mit schlüsselloser Free-Stufe (alle Funktionen, bis 1000 Tags, Instanz 0; Standard/Professional/Unlimited). Neuer Anleitungs-Tab mit herunterladbaren Add-On Instructions.",
@@ -80,19 +93,6 @@
 				"pl": "Przeglądanie kontrolera na żywo i odpytywanie wsadowe.",
 				"uk": "Живий огляд контролера та пакетне опитування.",
 				"zh-cn": "控制器在线浏览与批量轮询。"
-			},
-			"0.0.5": {
-				"en": "Tag browser: Optix-style extended-property nodes, full 48-attribute @Alarms per condition, tri-state checkboxes showing already-configured tags. All tags are writable (write gating removed). Objects warning limit lifts automatically. Commercial license.",
-				"de": "Knoten für erweiterte Eigenschaften, vollständiger Tag-Alarm-Baum, kommerzielle Lizenz.",
-				"ru": "Узлы расширенных свойств, полное дерево теговых тревог, коммерческая лицензия.",
-				"pt": "Nós de propriedades estendidas, árvore completa de alarmes de tag, licença comercial.",
-				"nl": "Knooppunten voor uitgebreide eigenschappen, volledige tag-alarmboom, commerciële licentie.",
-				"fr": "Nœuds de propriétés étendues, arbre complet des alarmes de tags, licence commerciale.",
-				"it": "Nodi delle proprietà estese, albero completo degli allarmi tag, licenza commerciale.",
-				"es": "Nodos de propiedades extendidas, árbol completo de alarmas de tags, licencia comercial.",
-				"pl": "Węzły właściwości rozszerzonych, pełne drzewo alarmów tagów, licencja komercyjna.",
-				"uk": "Вузли розширених властивостей, повне дерево тегових тривог, комерційна ліцензія.",
-				"zh-cn": "扩展属性节点、完整的标签报警树、商业许可证。"
 			}
 		},
 		"titleLang": {
@@ -121,15 +121,8 @@
 			"uk": "Адаптер ioBroker для ПЛК Rockwell CompactLogix/ControlLogix через Ethernet/IP",
 			"zh-cn": "用于通过以太网/IP 的 Rockwell CompactLogix/ControlLogix PLC 的 ioBroker 适配器"
 		},
-		"authors": [
-			"gokturk413 <gokturk413@gmail.com>"
-		],
-		"keywords": [
-			"rockwell",
-			"ethernet-ip",
-			"controllogix",
-			"compactlogix"
-		],
+		"authors": ["gokturk413 <gokturk413@gmail.com>"],
+		"keywords": ["rockwell", "ethernet-ip", "controllogix", "compactlogix"],
 		"licenseInformation": {
 			"type": "commercial",
 			"license": "CC-BY-NC-4.0",
