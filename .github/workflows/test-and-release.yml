@@ -42,14 +42,9 @@ jobs:
     strategy:
       # One OS failing should not hide the result of the others.
       fail-fast: false
-      # ioBroker runs on Linux, so both supported Node versions are covered
-      # there; Windows and macOS guard the platform-specific paths.
       matrix:
-        include:
-          - { os: ubuntu-latest, node-version: 22.x }
-          - { os: ubuntu-latest, node-version: 24.x }
-          - { os: windows-latest, node-version: 22.x }
-          - { os: macos-latest, node-version: 22.x }
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [22.x, 24.x]
 
     steps:
       - uses: ioBroker/testing-action-adapter@v1
