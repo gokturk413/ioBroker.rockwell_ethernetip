@@ -1,8 +1,21 @@
 {
 	"common": {
 		"name": "rockwell_ethernetip",
-		"version": "0.0.12",
+		"version": "0.0.13",
 		"news": {
+			"0.0.13": {
+				"en": "License hardware id is now bound to the motherboard, so a license survives disk swaps, failed/replaced hard disks and attached USB/external drives — only a mainboard change rebinds it (the old id shifted whenever a drive was added). Licenses carry a stable id for provable re-issue after a hardware change.",
+				"de": "Die Hardware-ID der Lizenz ist jetzt an das Mainboard gebunden, sodass eine Lizenz Datenträgerwechsel, defekte/ersetzte Festplatten und angeschlossene USB-/externe Laufwerke übersteht — nur ein Mainboard-Wechsel bindet sie neu. Lizenzen tragen eine stabile ID für nachweisbare Neuausstellung nach Hardware-Wechsel.",
+				"ru": "Аппаратный идентификатор лицензии теперь привязан к материнской плате, поэтому лицензия переживает замену диска, выход из строя/замену жёсткого диска и подключение USB/внешних накопителей — перепривязка только при смене материнской платы. Лицензии содержат стабильный идентификатор для доказуемого перевыпуска после смены оборудования.",
+				"pt": "O id de hardware da licença passa a estar associado à motherboard, pelo que uma licença sobrevive a trocas de disco, discos avariados/substituídos e unidades USB/externas ligadas — só uma troca de motherboard a reassocia. As licenças passam a ter um id estável para reemissão comprovável após mudança de hardware.",
+				"nl": "De hardware-id van de licentie is nu gekoppeld aan het moederbord, zodat een licentie schijfwissels, defecte/vervangen harde schijven en aangesloten USB-/externe schijven overleeft — alleen een moederbordwissel herbindt hem. Licenties krijgen een stabiele id voor aantoonbare heruitgifte na een hardwarewijziging.",
+				"fr": "L’identifiant matériel de la licence est désormais lié à la carte mère : une licence survit aux changements de disque, aux disques durs défaillants/remplacés et aux disques USB/externes connectés — seul un changement de carte mère la relie à nouveau. Les licences portent un identifiant stable pour une réémission prouvable après un changement matériel.",
+				"it": "L’id hardware della licenza è ora legato alla scheda madre, quindi una licenza sopravvive a cambi di disco, dischi guasti/sostituiti e unità USB/esterne collegate — solo un cambio di scheda madre la rivincola. Le licenze contengono un id stabile per una riemissione dimostrabile dopo un cambio hardware.",
+				"es": "El id de hardware de la licencia ahora está vinculado a la placa base, por lo que una licencia sobrevive a cambios de disco, discos duros averiados/sustituidos y unidades USB/externas conectadas — solo un cambio de placa base la revincula. Las licencias llevan un id estable para una reemisión demostrable tras un cambio de hardware.",
+				"pl": "Identyfikator sprzętowy licencji jest teraz powiązany z płytą główną, więc licencja przetrwa wymianę dysku, awarię/wymianę dysku twardego oraz podłączenie napędów USB/zewnętrznych — ponowne powiązanie tylko przy wymianie płyty głównej. Licencje zawierają stabilny identyfikator do udowodnionego ponownego wydania po zmianie sprzętu.",
+				"uk": "Апаратний ідентифікатор ліцензії тепер прив’язаний до материнської плати, тож ліцензія переживає заміну диска, вихід з ладу/заміну жорсткого диска та підключення USB/зовнішніх накопичувачів — перепривʼязка лише за зміни материнської плати. Ліцензії містять стабільний ідентифікатор для доказового перевидання після зміни обладнання.",
+				"zh-cn": "许可证的硬件 ID 现在绑定到主板，因此更换磁盘、硬盘损坏/更换以及连接 USB/外置驱动器时许可证仍然有效——只有更换主板才会重新绑定（旧 ID 在添加驱动器时会漂移）。许可证包含稳定 ID，硬件更换后可进行可证明的重新签发。"
+			},
 			"0.0.12": {
 				"en": "Push auto-recovery after controller outages and Studio downloads; Instructions tab fixes (own scrollbar, dark-theme chips); original adapter logo; admin translations for 10 languages; license changed to CC BY-NC 4.0 with third-party notices in the platform packages.",
 				"de": "Automatische Push-Wiederherstellung nach Controller-Ausfällen und Studio-Downloads; Anleitungs-Tab-Korrekturen (eigene Bildlaufleiste, Dark-Theme-Chips); eigenes Adapter-Logo; Admin-Übersetzungen für 10 Sprachen; Lizenz auf CC BY-NC 4.0 umgestellt, Drittanbieterhinweise in den Plattformpaketen.",
@@ -80,19 +93,6 @@
 				"pl": "Alarmy tagów na żywo i podsumowania zestawów, właściwości rozszerzone jako stany z pliku, równoległe połączenia CIP, masowy import tagów.",
 				"uk": "Живі тегові тривоги та зведення наборів, розширені властивості як стани з файлу, паралельні CIP-з’єднання, масовий імпорт тегів.",
 				"zh-cn": "实时标签报警与报警集摘要、来自项目文件的扩展属性状态、并行 CIP 连接、批量标签导入。"
-			},
-			"0.0.6": {
-				"en": "Live controller browse over EtherNet/IP (symbol list + templates, PlantPAx AOIs expand without a file; alarms/EP enriched from the project file or live-probed). Polling reads all due tags in overlapped batches (CIP Multiple Service Packets) — large tag sets poll many times faster.",
-				"de": "Live-Durchsuchen des Controllers und gebündeltes Polling.",
-				"ru": "Живой обзор контроллера и пакетный опрос.",
-				"pt": "Exploração ao vivo do controlador e sondagem em lote.",
-				"nl": "Live doorzoeken van de controller en gebundelde polling.",
-				"fr": "Parcours en direct du contrôleur et scrutation groupée.",
-				"it": "Esplorazione dal vivo del controller e polling raggruppato.",
-				"es": "Exploración en vivo del controlador y sondeo por lotes.",
-				"pl": "Przeglądanie kontrolera na żywo i odpytywanie wsadowe.",
-				"uk": "Живий огляд контролера та пакетне опитування.",
-				"zh-cn": "控制器在线浏览与批量轮询。"
 			}
 		},
 		"titleLang": {

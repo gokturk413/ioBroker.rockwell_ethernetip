@@ -168,6 +168,11 @@ automatically on install — nothing to build for adapter users or contributors.
 	### **WORK IN PROGRESS**
 -->
 
+### 0.0.13 (2026-07-17)
+
+- (gokturk413) License hardware id bound to the motherboard — survives disk swaps, failed disks and attached USB/external drives
+- (gokturk413) Licenses carry a stable id for provable re-issue after a hardware change
+
 ### 0.0.12 (2026-07-16)
 
 - (gokturk413) Push auto-recovery after controller outages and Studio downloads
