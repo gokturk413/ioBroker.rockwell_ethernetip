@@ -1,6 +1,6 @@
 {
 	"name": "iobroker.rockwell_ethernetip",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "ioBroker adapter for Rockwell CompactLogix/ControlLogix PLCs via Ethernet/IP",
 	"author": {
 		"name": "gokturk413",
@@ -26,13 +26,6 @@
 	"dependencies": {
 		"@iobroker/adapter-core": "^3.4.3",
 		"@material-ui/icons": "^4.11.3"
-	},
-	"optionalDependencies": {
-		"iobroker.rockwell_ethernetip-darwin-arm64": "0.0.13",
-		"iobroker.rockwell_ethernetip-darwin-x64": "0.0.13",
-		"iobroker.rockwell_ethernetip-linux-arm64": "0.0.13",
-		"iobroker.rockwell_ethernetip-linux-x64": "0.0.13",
-		"iobroker.rockwell_ethernetip-win32-x64": "0.0.13"
 	},
 	"devDependencies": {
 		"@alcalzone/release-script": "^5.2.1",
@@ -60,6 +53,7 @@
 		"admin/aoi/*.L5X",
 		"admin/build/",
 		"!admin/build/**/*.map",
+		"prebuilds/*/rockwell_engine.node.gz",
 		"lib/",
 		"!lib/**/*.test.js",
 		"www/",
@@ -83,11 +77,10 @@
 		"engine:check": "node native/test/node-ci-check.cjs",
 		"engine:smoke": "node native/test/node-smoke.cjs",
 		"hardware-id": "node tools/hardware-id.cjs",
-		"pack:prebuilds": "node tools/pack-prebuilds.mjs",
-		"sync:optional": "node tools/sync-optional-versions.mjs",
-		"version": "node tools/sync-optional-versions.mjs && npm install --package-lock-only --ignore-scripts && git add package.json package-lock.json io-package.json",
+		"version": "npm install --package-lock-only --ignore-scripts && git add package.json package-lock.json io-package.json",
 		"translate": "translate-adapter",
-		"release": "release-script"
+		"release": "release-script",
+		"pack:engines": "node tools/gzip-prebuilds.mjs"
 	},
 	"bugs": {
 		"url": "https://github.com/gokturk413/ioBroker.rockwell_ethernetip/issues"

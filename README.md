@@ -44,42 +44,34 @@ personnel can access the ioBroker host.
 
 ## Requirements
 
-- A **license key** for the host machine. The engine does not poll without a valid
-  license — see [Licensing](#licensing).
 - One of the supported platforms below.
+- A license is optional: a built-in **free tier** runs all features on adapter
+  instance 0 with up to 1000 tags. Paid editions raise the tag limit and unlock
+  additional instances — see [Licensing](#licensing).
 
 ## Installation & platform binaries
 
-The PLC engine is a native binary. It is **not** bundled into the adapter package —
-each platform's engine is published as its own npm package that declares its `os`
-and `cpu`, so npm downloads **only the one matching the installing machine**
-(≈7.5 MB instead of all five):
+The PLC engine is a native binary. A single adapter package ships the engine for
+every supported platform, gzip-compressed; on first start the adapter expands
+only the binary matching the host and loads it — nothing else to install.
 
-| Platform                               | RID           | Package                                     |
-| -------------------------------------- | ------------- | ------------------------------------------- |
-| Windows x64                            | `win-x64`     | `iobroker.rockwell_ethernetip-win32-x64`    |
-| Linux x64                              | `linux-x64`   | `iobroker.rockwell_ethernetip-linux-x64`    |
-| Linux arm64 (Raspberry Pi 4/5, 64-bit) | `linux-arm64` | `iobroker.rockwell_ethernetip-linux-arm64`  |
-| macOS Apple Silicon                    | `osx-arm64`   | `iobroker.rockwell_ethernetip-darwin-arm64` |
-| macOS Intel                            | `osx-x64`     | `iobroker.rockwell_ethernetip-darwin-x64`   |
-
-They are listed as `optionalDependencies`, so an install on an unlisted platform
-still succeeds — the adapter then starts, logs which paths it searched, and stays
+Supported platforms: Windows x64, Linux x64, Linux arm64 (Raspberry Pi 4/5,
+64-bit), macOS Apple Silicon and macOS Intel. On an unlisted platform the
+adapter still installs — it then logs that no engine matched the host and stays
 idle instead of crashing.
-
-The adapter loads the platform package automatically; when it is missing it
-logs which locations it searched and stays idle instead of crashing.
 
 ## Licensing
 
-A license is issued for the machine that runs the adapter, identified by its
+The **free tier** needs no key: all features, up to 1000 tags, adapter instance 0. Paid editions (Standard/Professional/Unlimited) raise the per-instance tag
+limit and the number of instances.
+
+A paid license is issued for the machine that runs the adapter, identified by its
 **Hardware ID**. Open the adapter settings → **Connection** tab → **Check License**
 to see this machine's Hardware ID, then send it to
-[gokturk413](https://github.com/gokturk413) to obtain a key.
-
-Paste the key into the **License Key** field and press **Check License** again —
-it reports whether the key is valid for this machine. The engine does not poll the
-PLC until it is.
+[gokturk413](https://github.com/gokturk413) to obtain a key. Paste it into the
+**License Key** field and press **Check License** again. A license survives common
+hardware changes (disk replacement, added drives); a genuine hardware change can be
+re-issued without a new purchase.
 
 ## Configuration
 
@@ -167,6 +159,10 @@ automatically on install — nothing to build for adapter users or contributors.
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+
+### 0.0.14 (2026-07-17)
+
+- (gokturk413) The engine for all platforms now ships in a single npm package (compressed); only the matching binary is expanded on first start
 
 ### 0.0.13 (2026-07-17)
 

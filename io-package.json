@@ -3,6 +3,19 @@
 		"name": "rockwell_ethernetip",
 		"version": "0.0.13",
 		"news": {
+			"0.0.14": {
+				"en": "The engine for all platforms now ships inside a single npm package (compressed), instead of five separate per-platform packages — only the binary matching the host is expanded on first start.",
+				"de": "Die Engine für alle Plattformen wird jetzt in einem einzigen npm-Paket (komprimiert) ausgeliefert, statt in fünf separaten Plattformpaketen — beim ersten Start wird nur die passende Binärdatei entpackt.",
+				"ru": "Движок для всех платформ теперь поставляется в одном npm-пакете (в сжатом виде) вместо пяти отдельных пакетов — при первом запуске распаковывается только подходящий бинарник.",
+				"pt": "O motor para todas as plataformas passa a ser distribuído num único pacote npm (comprimido) em vez de cinco pacotes por plataforma — só o binário correspondente ao host é expandido no primeiro arranque.",
+				"nl": "De engine voor alle platforms zit nu in één npm-pakket (gecomprimeerd) in plaats van vijf aparte platformpakketten — alleen de bij de host passende binary wordt bij de eerste start uitgepakt.",
+				"fr": "Le moteur pour toutes les plateformes est désormais livré dans un seul paquet npm (compressé) au lieu de cinq paquets distincts — seul le binaire correspondant à l’hôte est extrait au premier démarrage.",
+				"it": "Il motore per tutte le piattaforme è ora distribuito in un unico pacchetto npm (compresso) invece di cinque pacchetti separati — al primo avvio viene estratto solo il binario corrispondente all’host.",
+				"es": "El motor para todas las plataformas ahora se distribuye en un único paquete npm (comprimido) en lugar de cinco paquetes por plataforma — solo se expande el binario correspondiente al host en el primer arranque.",
+				"pl": "Silnik dla wszystkich platform jest teraz dostarczany w jednym pakiecie npm (skompresowany) zamiast pięciu osobnych pakietów — przy pierwszym uruchomieniu rozpakowywany jest tylko pasujący plik binarny.",
+				"uk": "Рушій для всіх платформ тепер постачається в одному npm-пакеті (стисненому) замість п’яти окремих пакетів — під час першого запуску розпаковується лише відповідний бінарник.",
+				"zh-cn": "所有平台的引擎现在打包在单个 npm 包中（压缩），不再是五个独立的平台包——首次启动时仅解压与主机匹配的二进制文件。"
+			},
 			"0.0.13": {
 				"en": "License activation is now stable across common hardware changes — replacing or adding a disk, or attaching a USB/external drive, no longer affects an existing license. After a genuine hardware change, a license can be re-issued without a new purchase.",
 				"de": "Die Lizenzaktivierung ist jetzt bei üblichen Hardware-Änderungen stabil — das Ersetzen oder Hinzufügen eines Datenträgers oder das Anschließen eines USB-/externen Laufwerks beeinträchtigt eine bestehende Lizenz nicht mehr. Nach einem echten Hardware-Wechsel kann eine Lizenz ohne Neukauf neu ausgestellt werden.",
@@ -80,19 +93,6 @@
 				"pl": "Tryb push PLC przez gniazdo TCP (kontrolery fizyczne); równoległe połączenia CIP.",
 				"uk": "Режим push ПЛК через TCP-сокет (фізичні контролери); паралельні CIP-з’єднання.",
 				"zh-cn": "通过 TCP 套接字的 PLC 推送模式（物理控制器）；并行 CIP 连接。"
-			},
-			"0.0.7": {
-				"en": "Live @Alarms/@AlarmSet with per-template probing, EP properties as file-served states, operand EPs nest under their member, parallel CIP connections (up to 4x read throughput), sliced batch deadlines, importTags bulk config command, graceful shutdown (stopTimeout), tree-search fixes. Field result: fast-tier tag latency ~1 s on a 12k-tag setup.",
-				"de": "Live-Tag-Alarme und Alarmgruppen, erweiterte Eigenschaften als dateibasierte States, parallele CIP-Verbindungen, Massenimport von Tags.",
-				"ru": "Живые теговые тревоги и сводки групп тревог, расширенные свойства как состояния из файла, параллельные CIP-соединения, массовый импорт тегов.",
-				"pt": "Alarmes de tag ao vivo e resumos de conjuntos, propriedades estendidas como estados do ficheiro, conexões CIP paralelas, importação em massa de tags.",
-				"nl": "Live tag-alarmen en alarmset-samenvattingen, uitgebreide eigenschappen als bestandsgebaseerde states, parallelle CIP-verbindingen, bulkimport van tags.",
-				"fr": "Alarmes de tags en direct et synthèses de groupes, propriétés étendues servies depuis le fichier, connexions CIP parallèles, import de tags en masse.",
-				"it": "Allarmi tag dal vivo e riepiloghi dei set, proprietà estese come stati da file, connessioni CIP parallele, importazione di tag in blocco.",
-				"es": "Alarmas de tags en vivo y resúmenes de conjuntos, propiedades extendidas como estados desde archivo, conexiones CIP paralelas, importación masiva de tags.",
-				"pl": "Alarmy tagów na żywo i podsumowania zestawów, właściwości rozszerzone jako stany z pliku, równoległe połączenia CIP, masowy import tagów.",
-				"uk": "Живі тегові тривоги та зведення наборів, розширені властивості як стани з файлу, паралельні CIP-з’єднання, масовий імпорт тегів.",
-				"zh-cn": "实时标签报警与报警集摘要、来自项目文件的扩展属性状态、并行 CIP 连接、批量标签导入。"
 			}
 		},
 		"titleLang": {
