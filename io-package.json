@@ -1,8 +1,21 @@
 {
 	"common": {
 		"name": "rockwell-enip",
-		"version": "0.0.16",
+		"version": "0.0.17",
 		"news": {
+			"0.0.17": {
+				"en": "Maintenance: canonical repository metadata, CI and release on Node 24, and npm publishing with build provenance (supply-chain verification).",
+				"de": "Wartung: kanonische Repository-Metadaten, CI auf Node 24 und npm-Veröffentlichung mit Build-Provenance (Lieferketten-Verifizierung).",
+				"ru": "Обслуживание: канонические метаданные репозитория, CI на Node 24 и публикация в npm с provenance сборки (проверка цепочки поставок).",
+				"pt": "Manutenção: metadados canónicos do repositório, CI no Node 24 e publicação no npm com proveniência de build (verificação da cadeia de fornecimento).",
+				"nl": "Onderhoud: canonieke repository-metadata, CI op Node 24 en npm-publicatie met build-provenance (supply-chain-verificatie).",
+				"fr": "Maintenance : métadonnées de dépôt canoniques, CI sur Node 24 et publication npm avec provenance de build (vérification de la chaîne d'approvisionnement).",
+				"it": "Manutenzione: metadati del repository canonici, CI su Node 24 e pubblicazione npm con provenance della build (verifica della supply chain).",
+				"es": "Mantenimiento: metadatos canónicos del repositorio, CI en Node 24 y publicación npm con procedencia de compilación (verificación de la cadena de suministro).",
+				"pl": "Konserwacja: kanoniczne metadane repozytorium, CI na Node 24 i publikacja npm z proweniencją kompilacji (weryfikacja łańcucha dostaw).",
+				"uk": "Обслуговування: канонічні метадані репозиторію, CI на Node 24 та публікація npm із provenance збірки (перевірка ланцюга постачання).",
+				"zh-cn": "维护：规范的仓库元数据、Node 24 上的 CI，以及带构建来源证明（供应链验证）的 npm 发布。"
+			},
 			"0.0.16": {
 				"en": "First release under the adapter's final id `rockwell-enip` (ioBroker ids use hyphens), carrying the object-tree and performance improvements. If you used the previous id, switch to this package.",
 				"de": "Erste Veröffentlichung unter der endgültigen Adapter-ID `rockwell-enip` (ioBroker-IDs verwenden Bindestriche), mit den Objektbaum- und Performance-Verbesserungen. Wer die bisherige ID genutzt hat, sollte auf dieses Paket wechseln.",

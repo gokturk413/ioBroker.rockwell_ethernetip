@@ -160,6 +160,10 @@ automatically on install — nothing to build for adapter users or contributors.
 	### **WORK IN PROGRESS**
 -->
 
+### 0.0.17 (2026-07-22)
+
+- (gokturk413) Maintenance: canonical repository metadata, CI and release on Node 24, and npm publishing with build provenance
+
 ### 0.0.16 (2026-07-21)
 
 - (gokturk413) Published under the adapter's final id `iobroker.rockwell-enip` (ioBroker ids use hyphens)
