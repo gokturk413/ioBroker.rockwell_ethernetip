@@ -173,6 +173,10 @@ automatically on install — nothing to build for adapter users or contributors.
 	### **WORK IN PROGRESS**
 -->
 
+### 0.0.20 (2026-07-24)
+
+- (gokturk413) Stale-data signalling: on a lost PLC connection, tag states keep their last value but get a not-connected quality (like an OPC/KEPServer Bad quality); quality returns to good on reconnect
+
 ### 0.0.19 (2026-07-22)
 
 - (gokturk413) Push mode covers arrays: array elements as watched instances (any dimensionality) and arrays inside an instance

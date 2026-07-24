@@ -1,8 +1,21 @@
 {
 	"common": {
 		"name": "rockwell-enip",
-		"version": "0.0.19",
+		"version": "0.0.20",
 		"news": {
+			"0.0.20": {
+				"en": "Stale-data signalling: when the PLC connection drops, tag states keep their last value but get a not-connected quality (the ioBroker equivalent of an OPC/KEPServer Bad quality); quality returns to good on reconnect, so dashboards can tell live data from old.",
+				"de": "Kennzeichnung veralteter Daten: Bei Verbindungsverlust behalten Tag-Zustände ihren letzten Wert, erhalten aber eine Nicht-verbunden-Qualität (das ioBroker-Äquivalent zur OPC/KEPServer-Schlecht-Qualität); bei Wiederverbindung wird die Qualität wieder gut.",
+				"ru": "Индикация устаревших данных: при потере связи с ПЛК состояния тегов сохраняют последнее значение, но получают качество «не подключено» (аналог Bad quality в OPC/KEPServer); при восстановлении связи качество снова становится хорошим.",
+				"pt": "Sinalização de dados obsoletos: quando a ligação ao PLC cai, os estados das tags mantêm o último valor mas ficam com uma qualidade de não-ligado (o equivalente ioBroker à qualidade Bad do OPC/KEPServer); a qualidade volta a boa ao reconectar.",
+				"nl": "Signalering van verouderde data: als de PLC-verbinding wegvalt, behouden tagstatussen hun laatste waarde maar krijgen ze een niet-verbonden kwaliteit (het ioBroker-equivalent van een OPC/KEPServer Bad-kwaliteit); bij herverbinding wordt de kwaliteit weer goed.",
+				"fr": "Signalement des données périmées : en cas de perte de connexion à l'automate, les états des tags conservent leur dernière valeur mais reçoivent une qualité non-connecté (l'équivalent ioBroker d'une qualité Bad OPC/KEPServer) ; la qualité redevient bonne à la reconnexion.",
+				"it": "Segnalazione dati obsoleti: alla perdita di connessione con il PLC, gli stati dei tag mantengono l'ultimo valore ma ricevono una qualità non-connesso (l'equivalente ioBroker della qualità Bad di OPC/KEPServer); la qualità torna buona alla riconnessione.",
+				"es": "Señalización de datos obsoletos: cuando se pierde la conexión con el PLC, los estados de los tags conservan su último valor pero reciben una calidad no-conectado (el equivalente en ioBroker a la calidad Bad de OPC/KEPServer); la calidad vuelve a buena al reconectar.",
+				"pl": "Sygnalizacja nieaktualnych danych: po utracie połączenia z PLC stany tagów zachowują ostatnią wartość, ale otrzymują jakość „niepołączony” (odpowiednik jakości Bad w OPC/KEPServer); po ponownym połączeniu jakość wraca do dobrej.",
+				"uk": "Позначення застарілих даних: при втраті зв'язку з ПЛК стани тегів зберігають останнє значення, але отримують якість «не підключено» (аналог Bad quality в OPC/KEPServer); при відновленні зв'язку якість знову стає доброю.",
+				"zh-cn": "过时数据标记：PLC 连接断开时，标签状态保留最后的值但被标记为未连接质量（相当于 OPC/KEPServer 的 Bad 质量）；重新连接后质量恢复为良好。"
+			},
 			"0.0.19": {
 				"en": "Push mode now covers arrays: an array element can be a watched instance (MyMotors[19].Val, Arr[i,j].Val) and arrays inside an instance resolve correctly. Instances sharing a type and selection share one word list, so large arrays cost little controller memory. Re-import the generated routine after changing the selection.",
 				"de": "Push-Modus unterstützt jetzt Arrays: Ein Array-Element kann eine überwachte Instanz sein (MyMotors[19].Val, Arr[i,j].Val), und Arrays innerhalb einer Instanz werden korrekt aufgelöst. Instanzen mit gleichem Typ und gleicher Auswahl teilen sich eine Wortliste, sodass große Arrays wenig Steuerungsspeicher kosten. Nach Auswahländerung die generierte Routine neu importieren.",

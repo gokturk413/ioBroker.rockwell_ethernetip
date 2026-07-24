@@ -1,6 +1,6 @@
 {
 	"name": "iobroker.rockwell-enip",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"description": "ioBroker adapter for Rockwell CompactLogix/ControlLogix PLCs via Ethernet/IP",
 	"author": {
 		"name": "gokturk413",
